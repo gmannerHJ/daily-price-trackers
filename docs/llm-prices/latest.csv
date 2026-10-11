@@ -6615,7 +6615,7 @@ models.dev,kilo,~openai/gpt-sol-latest,1050000,2,10,pdf+image+text->text
 models.dev,kilo,~openai/gpt-terra-latest,1050000,2,12,pdf+image+text->text
 models.dev,kilo,~x-ai/grok-latest,500000,2,6,text+image+pdf->text
 models.dev,kilo,~z-ai/glm-flash-latest,1048576,0.04,0.5,text+image+video->text
-models.dev,kilo,~z-ai/glm-latest,1048576,0.039,4.8,text->text
+models.dev,kilo,~z-ai/glm-latest,1048576,0.07,4.8,text->text
 models.dev,kimi-code-plan-cn,k3,1048576,0,0,text+image+video->text
 models.dev,kimi-code-plan-cn,k3-256k,262144,0,0,text+image->text
 models.dev,kimi-code-plan-cn,kimi-for-coding,1048576,0,0,text+image+video->text
@@ -9407,7 +9407,7 @@ models.dev,openrouter,z-ai/glm-5,204800,0.6,1.92,text->text
 models.dev,openrouter,z-ai/glm-5-turbo,202752,1.2,4,text->text
 models.dev,openrouter,z-ai/glm-5.1,204800,0.966,3.036,text->text
 models.dev,openrouter,z-ai/glm-5.2,1048576,0.06,7,text->text
-models.dev,openrouter,z-ai/glm-5.3,1048576,0.039,4.8,text->text
+models.dev,openrouter,z-ai/glm-5.3,1048576,0.07,4.8,text->text
 models.dev,openrouter,z-ai/glm-5.3-flash,1048576,0.15,0.5,text+image+video->text
 models.dev,openrouter,z-ai/glm-5.3-flashx,1048576,0.37,1.25,text+image+video->text
 models.dev,openrouter,z-ai/glm-5.3-prime,1000000,2.8,8.8,text->text
@@ -9429,7 +9429,7 @@ models.dev,openrouter,~openai/gpt-sol-latest,1050000,2,10,pdf+image+text->text
 models.dev,openrouter,~openai/gpt-terra-latest,1050000,2,12,pdf+image+text->text
 models.dev,openrouter,~x-ai/grok-latest,500000,2,6,text+image+pdf->text
 models.dev,openrouter,~z-ai/glm-flash-latest,1048576,0.04,0.5,text+image+video->text
-models.dev,openrouter,~z-ai/glm-latest,1048576,0.039,4.8,text->text
+models.dev,openrouter,~z-ai/glm-latest,1048576,0.07,4.8,text->text
 models.dev,opper,claude-fable-5,1000000,10,50,text+image+pdf->text
 models.dev,opper,claude-fable-5-1,1000000,10,50,text+image+pdf->text
 models.dev,opper,claude-haiku-4-5,200000,1.1,5.5,text+image->text

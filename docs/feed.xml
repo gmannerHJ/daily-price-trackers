@@ -5,20 +5,20 @@
 <link rel="self" href="https://gmannerhj.github.io/daily-price-trackers/feed.xml"/>
 <link href="https://gmannerhj.github.io/daily-price-trackers/"/>
 <id>https://gmannerhj.github.io/daily-price-trackers/</id>
-<updated>2026-10-11T13:07:44Z</updated>
+<updated>2026-10-11T13:48:32Z</updated>
 <author><name>Daily price trackers</name></author>
 <entry>
 <title>GPU rental prices: first snapshot, 1600 rows (2026-10-11)</title>
 <link href="https://gmannerhj.github.io/daily-price-trackers/gpu-rental-prices/"/>
 <id>https://gmannerhj.github.io/daily-price-trackers/gpu-rental-prices/#first-2026-10-11</id>
-<updated>2026-10-11T13:07:44Z</updated>
+<updated>2026-10-11T13:48:32Z</updated>
 <summary>GPU rental prices: first snapshot, 1600 rows (2026-10-11)</summary>
 </entry>
 <entry>
 <title>Language-model API prices: first snapshot, 11304 rows (2026-10-11)</title>
 <link href="https://gmannerhj.github.io/daily-price-trackers/llm-prices/"/>
 <id>https://gmannerhj.github.io/daily-price-trackers/llm-prices/#first-2026-10-11</id>
-<updated>2026-10-11T13:07:02Z</updated>
+<updated>2026-10-11T13:48:11Z</updated>
 <summary>Language-model API prices: first snapshot, 11304 rows (2026-10-11)</summary>
 </entry>
 </feed>

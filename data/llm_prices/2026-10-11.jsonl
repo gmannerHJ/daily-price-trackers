@@ -6614,7 +6614,7 @@
 {"source":"models.dev","provider":"kilo","model_id":"~openai/gpt-terra-latest","context_length":1050000,"prompt_usd_per_mtok":2.0,"completion_usd_per_mtok":12.0,"modality":"pdf+image+text->text"}
 {"source":"models.dev","provider":"kilo","model_id":"~x-ai/grok-latest","context_length":500000,"prompt_usd_per_mtok":2.0,"completion_usd_per_mtok":6.0,"modality":"text+image+pdf->text"}
 {"source":"models.dev","provider":"kilo","model_id":"~z-ai/glm-flash-latest","context_length":1048576,"prompt_usd_per_mtok":0.04,"completion_usd_per_mtok":0.5,"modality":"text+image+video->text"}
-{"source":"models.dev","provider":"kilo","model_id":"~z-ai/glm-latest","context_length":1048576,"prompt_usd_per_mtok":0.039,"completion_usd_per_mtok":4.8,"modality":"text->text"}
+{"source":"models.dev","provider":"kilo","model_id":"~z-ai/glm-latest","context_length":1048576,"prompt_usd_per_mtok":0.07,"completion_usd_per_mtok":4.8,"modality":"text->text"}
 {"source":"models.dev","provider":"kimi-code-plan-cn","model_id":"k3","context_length":1048576,"prompt_usd_per_mtok":0.0,"completion_usd_per_mtok":0.0,"modality":"text+image+video->text"}
 {"source":"models.dev","provider":"kimi-code-plan-cn","model_id":"k3-256k","context_length":262144,"prompt_usd_per_mtok":0.0,"completion_usd_per_mtok":0.0,"modality":"text+image->text"}
 {"source":"models.dev","provider":"kimi-code-plan-cn","model_id":"kimi-for-coding","context_length":1048576,"prompt_usd_per_mtok":0.0,"completion_usd_per_mtok":0.0,"modality":"text+image+video->text"}
@@ -9406,7 +9406,7 @@
 {"source":"models.dev","provider":"openrouter","model_id":"z-ai/glm-5-turbo","context_length":202752,"prompt_usd_per_mtok":1.2,"completion_usd_per_mtok":4.0,"modality":"text->text"}
 {"source":"models.dev","provider":"openrouter","model_id":"z-ai/glm-5.1","context_length":204800,"prompt_usd_per_mtok":0.966,"completion_usd_per_mtok":3.036,"modality":"text->text"}
 {"source":"models.dev","provider":"openrouter","model_id":"z-ai/glm-5.2","context_length":1048576,"prompt_usd_per_mtok":0.06,"completion_usd_per_mtok":7.0,"modality":"text->text"}
-{"source":"models.dev","provider":"openrouter","model_id":"z-ai/glm-5.3","context_length":1048576,"prompt_usd_per_mtok":0.039,"completion_usd_per_mtok":4.8,"modality":"text->text"}
+{"source":"models.dev","provider":"openrouter","model_id":"z-ai/glm-5.3","context_length":1048576,"prompt_usd_per_mtok":0.07,"completion_usd_per_mtok":4.8,"modality":"text->text"}
 {"source":"models.dev","provider":"openrouter","model_id":"z-ai/glm-5.3-flash","context_length":1048576,"prompt_usd_per_mtok":0.15,"completion_usd_per_mtok":0.5,"modality":"text+image+video->text"}
 {"source":"models.dev","provider":"openrouter","model_id":"z-ai/glm-5.3-flashx","context_length":1048576,"prompt_usd_per_mtok":0.37,"completion_usd_per_mtok":1.25,"modality":"text+image+video->text"}
 {"source":"models.dev","provider":"openrouter","model_id":"z-ai/glm-5.3-prime","context_length":1000000,"prompt_usd_per_mtok":2.8,"completion_usd_per_mtok":8.8,"modality":"text->text"}
@@ -9428,7 +9428,7 @@
 {"source":"models.dev","provider":"openrouter","model_id":"~openai/gpt-terra-latest","context_length":1050000,"prompt_usd_per_mtok":2.0,"completion_usd_per_mtok":12.0,"modality":"pdf+image+text->text"}
 {"source":"models.dev","provider":"openrouter","model_id":"~x-ai/grok-latest","context_length":500000,"prompt_usd_per_mtok":2.0,"completion_usd_per_mtok":6.0,"modality":"text+image+pdf->text"}
 {"source":"models.dev","provider":"openrouter","model_id":"~z-ai/glm-flash-latest","context_length":1048576,"prompt_usd_per_mtok":0.04,"completion_usd_per_mtok":0.5,"modality":"text+image+video->text"}
-{"source":"models.dev","provider":"openrouter","model_id":"~z-ai/glm-latest","context_length":1048576,"prompt_usd_per_mtok":0.039,"completion_usd_per_mtok":4.8,"modality":"text->text"}
+{"source":"models.dev","provider":"openrouter","model_id":"~z-ai/glm-latest","context_length":1048576,"prompt_usd_per_mtok":0.07,"completion_usd_per_mtok":4.8,"modality":"text->text"}
 {"source":"models.dev","provider":"opper","model_id":"claude-fable-5","context_length":1000000,"prompt_usd_per_mtok":10.0,"completion_usd_per_mtok":50.0,"modality":"text+image+pdf->text"}
 {"source":"models.dev","provider":"opper","model_id":"claude-fable-5-1","context_length":1000000,"prompt_usd_per_mtok":10.0,"completion_usd_per_mtok":50.0,"modality":"text+image+pdf->text"}
 {"source":"models.dev","provider":"opper","model_id":"claude-haiku-4-5","context_length":200000,"prompt_usd_per_mtok":1.1,"completion_usd_per_mtok":5.5,"modality":"text+image->text"}
