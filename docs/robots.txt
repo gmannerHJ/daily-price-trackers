@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gmannerhj.github.io/daily-price-trackers/sitemap.xml

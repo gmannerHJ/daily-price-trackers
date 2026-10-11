@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Language-model API prices - Daily price trackers</title>
+<meta name="description" content="List prices per million tokens for language models, by provider, recorded once a day.">
+<link rel="canonical" href="https://gmannerhj.github.io/daily-price-trackers/llm-prices/">
+<link rel="alternate" type="application/atom+xml" title="Changes" href="../feed.xml">
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1a1a1a;--muted:#5f6368;--line:#d9dce1;--link:#0b57d0;--head:#f3f4f6}
+@media (prefers-color-scheme:dark){:root{--bg:#121416;--fg:#e6e6e6;--muted:#9aa0a6;--line:#33373d;--link:#8ab4f8;--head:#1c1f23}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main,header,footer{max-width:1100px;margin:0 auto;padding:0 16px}
+header{padding-top:16px}
+nav a{margin-right:14px}
+a{color:var(--link)}
+h1{font-size:1.5rem;margin:.8em 0 .3em}
+h2{font-size:1.15rem;margin:1.4em 0 .4em}
+p{margin:.5em 0}
+.muted{color:var(--muted);font-size:.9rem}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:6px;margin:.6em 0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:tabular-nums}
+th,td{padding:6px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:var(--head);position:sticky;top:0}
+td.n,th.n{text-align:right}
+tr:last-child td{border-bottom:0}
+input[type=search]{width:100%;max-width:360px;padding:8px;font:inherit;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg)}
+ul.cols{columns:3 220px;padding-left:1.2em}
+footer{border-top:1px solid var(--line);margin-top:2em;padding-top:1em;padding-bottom:2em}
+</style>
+</head>
+<body>
+<header><nav><a href="../">Home</a> <a href="../llm-prices/">Language-model API prices</a> <a href="../gpu-rental-prices/">GPU rental prices</a></nav></header>
+<main>
+<h1>Language-model API prices</h1>
+<p>List prices per million tokens for language models, by provider, recorded once a day.</p>
+<p class="muted">Latest snapshot: 2026-10-11 (UTC), fetched 2026-10-11T13:07:02Z. 11304 rows. History starts 2026-10-11; 1 daily snapshot so far.</p>
+<p><a href="changes.html">Changes by date</a> · <a href="latest.csv">latest.csv</a> · <a href="latest.json">latest.json</a> · <a href="changes.csv">changes.csv</a> · <a href="changes.json">changes.json</a></p>
+<h2>LiteLLM price list <span class="muted">(3284 rows)</span></h2>
+<ul class="cols"><li><a href="litellm/ai21.html">ai21</a> <span class="muted">12</span></li>
+<li><a href="litellm/aihubmix.html">aihubmix</a> <span class="muted">72</span></li>
+<li><a href="litellm/amazon-nova.html">amazon_nova</a> <span class="muted">4</span></li>
+<li><a href="litellm/anthropic.html">anthropic</a> <span class="muted">22</span></li>
+<li><a href="litellm/anyscale.html">anyscale</a> <span class="muted">12</span></li>
+<li><a href="litellm/azure.html">azure</a> <span class="muted">276</span></li>
+<li><a href="litellm/azure-ai.html">azure_ai</a> <span class="muted">134</span></li>
+<li><a href="litellm/azure-text.html">azure_text</a> <span class="muted">3</span></li>
+<li><a href="litellm/baseten.html">baseten</a> <span class="muted">27</span></li>
+<li><a href="litellm/bedrock.html">bedrock</a> <span class="muted">238</span></li>
+<li><a href="litellm/bedrock-converse.html">bedrock_converse</a> <span class="muted">230</span></li>
+<li><a href="litellm/bedrock-mantle.html">bedrock_mantle</a> <span class="muted">49</span></li>
+<li><a href="litellm/bespoke.html">bespoke</a> <span class="muted">3</span></li>
+<li><a href="litellm/cerebras.html">cerebras</a> <span class="muted">7</span></li>
+<li><a href="litellm/cloudflare.html">cloudflare</a> <span class="muted">34</span></li>
+<li><a href="litellm/codestral.html">codestral</a> <span class="muted">2</span></li>
+<li><a href="litellm/cognition.html">cognition</a> <span class="muted">3</span></li>
+<li><a href="litellm/cohere.html">cohere</a> <span class="muted">13</span></li>
+<li><a href="litellm/cohere-chat.html">cohere_chat</a> <span class="muted">6</span></li>
+<li><a href="litellm/crusoe.html">crusoe</a> <span class="muted">7</span></li>
+<li><a href="litellm/darkbloom.html">darkbloom</a> <span class="muted">2</span></li>
+<li><a href="litellm/dashscope.html">dashscope</a> <span class="muted">27</span></li>
+<li><a href="litellm/databricks.html">databricks</a> <span class="muted">60</span></li>
+<li><a href="litellm/deepinfra.html">deepinfra</a> <span class="muted">134</span></li>
+<li><a href="litellm/deepseek.html">deepseek</a> <span class="muted">16</span></li>
+<li><a href="litellm/fal-ai.html">fal_ai</a> <span class="muted">1</span></li>
+<li><a href="litellm/fireworks-ai.html">fireworks_ai</a> <span class="muted">330</span></li>
+<li><a href="litellm/fireworks-ai-embedding-models.html">fireworks_ai-embedding-models</a> <span class="muted">7</span></li>
+<li><a href="litellm/friendliai.html">friendliai</a> <span class="muted">7</span></li>
+<li><a href="litellm/gemini.html">gemini</a> <span class="muted">77</span></li>
+<li><a href="litellm/gigachat.html">gigachat</a> <span class="muted">7</span></li>
+<li><a href="litellm/github-copilot.html">github_copilot</a> <span class="muted">4</span></li>
+<li><a href="litellm/gmi.html">gmi</a> <span class="muted">16</span></li>
+<li><a href="litellm/gradient-ai.html">gradient_ai</a> <span class="muted">10</span></li>
+<li><a href="litellm/groq.html">groq</a> <span class="muted">7</span></li>
+<li><a href="litellm/hyperbolic.html">hyperbolic</a> <span class="muted">16</span></li>
+<li><a href="litellm/inception.html">inception</a> <span class="muted">2</span></li>
+<li><a href="litellm/jina-ai.html">jina_ai</a> <span class="muted">1</span></li>
+<li><a href="litellm/lambda-ai.html">lambda_ai</a> <span class="muted">20</span></li>
+<li><a href="litellm/laya.html">laya</a> <span class="muted">3</span></li>
+<li><a href="litellm/lemonade.html">lemonade</a> <span class="muted">5</span></li>
+<li><a href="litellm/libertai.html">libertai</a> <span class="muted">12</span></li>
+<li><a href="litellm/llamagate.html">llamagate</a> <span class="muted">16</span></li>
+<li><a href="litellm/meta.html">meta</a> <span class="muted">5</span></li>
+<li><a href="litellm/microsoft-365-copilot.html">microsoft_365_copilot</a> <span class="muted">1</span></li>
+<li><a href="litellm/minimax.html">minimax</a> <span class="muted">6</span></li>
+<li><a href="litellm/mistral.html">mistral</a> <span class="muted">54</span></li>
+<li><a href="litellm/moonshot.html">moonshot</a> <span class="muted">11</span></li>
+<li><a href="litellm/morph.html">morph</a> <span class="muted">2</span></li>
+<li><a href="litellm/nebius.html">nebius</a> <span class="muted">61</span></li>
+<li><a href="litellm/nlp-cloud.html">nlp_cloud</a> <span class="muted">2</span></li>
+<li><a href="litellm/novita.html">novita</a> <span class="muted">135</span></li>
+<li><a href="litellm/nscale.html">nscale</a> <span class="muted">14</span></li>
+<li><a href="litellm/nvidia-nim.html">nvidia_nim</a> <span class="muted">3</span></li>
+<li><a href="litellm/oci.html">oci</a> <span class="muted">44</span></li>
+<li><a href="litellm/ollama.html">ollama</a> <span class="muted">29</span></li>
+<li><a href="litellm/openai.html">openai</a> <span class="muted">148</span></li>
+<li><a href="litellm/ovhcloud.html">ovhcloud</a> <span class="muted">15</span></li>
+<li><a href="litellm/perplexity.html">perplexity</a> <span class="muted">81</span></li>
+<li><a href="litellm/pinstripes.html">pinstripes</a> <span class="muted">6</span></li>
+<li><a href="litellm/prism.html">prism</a> <span class="muted">2</span></li>
+<li><a href="litellm/publicai.html">publicai</a> <span class="muted">9</span></li>
+<li><a href="litellm/qwen-ai-platform.html">qwen_ai_platform</a> <span class="muted">27</span></li>
+<li><a href="litellm/qwencloud.html">qwencloud</a> <span class="muted">25</span></li>
+<li><a href="litellm/replicate.html">replicate</a> <span class="muted">40</span></li>
+<li><a href="litellm/sagemaker.html">sagemaker</a> <span class="muted">6</span></li>
+<li><a href="litellm/sail.html">sail</a> <span class="muted">12</span></li>
+<li><a href="litellm/sambanova.html">sambanova</a> <span class="muted">8</span></li>
+<li><a href="litellm/sarvam.html">sarvam</a> <span class="muted">1</span></li>
+<li><a href="litellm/scaledown.html">scaledown</a> <span class="muted">5</span></li>
+<li><a href="litellm/scaleway.html">scaleway</a> <span class="muted">15</span></li>
+<li><a href="litellm/scx-ai.html">scx-ai</a> <span class="muted">2</span></li>
+<li><a href="litellm/snowflake.html">snowflake</a> <span class="muted">21</span></li>
+<li><a href="litellm/strands-decider.html">strands_decider</a> <span class="muted">1</span></li>
+<li><a href="litellm/tencent.html">tencent</a> <span class="muted">3</span></li>
+<li><a href="litellm/tensormesh.html">tensormesh</a> <span class="muted">10</span></li>
+<li><a href="litellm/text-completion-codestral.html">text-completion-codestral</a> <span class="muted">2</span></li>
+<li><a href="litellm/text-completion-inception.html">text-completion-inception</a> <span class="muted">1</span></li>
+<li><a href="litellm/text-completion-openai.html">text-completion-openai</a> <span class="muted">6</span></li>
+<li><a href="litellm/together-ai.html">together_ai</a> <span class="muted">88</span></li>
+<li><a href="litellm/typesafe.html">typesafe</a> <span class="muted">3</span></li>
+<li><a href="litellm/v0.html">v0</a> <span class="muted">3</span></li>
+<li><a href="litellm/vercel-ai-gateway.html">vercel_ai_gateway</a> <span class="muted">99</span></li>
+<li><a href="litellm/vertex-ai.html">vertex_ai</a> <span class="muted">39</span></li>
+<li><a href="litellm/vertex-ai-ai21-models.html">vertex_ai-ai21_models</a> <span class="muted">5</span></li>
+<li><a href="litellm/vertex-ai-anthropic-models.html">vertex_ai-anthropic_models</a> <span class="muted">38</span></li>
+<li><a href="litellm/vertex-ai-deepseek-models.html">vertex_ai-deepseek_models</a> <span class="muted">3</span></li>
+<li><a href="litellm/vertex-ai-embedding-models.html">vertex_ai-embedding-models</a> <span class="muted">10</span></li>
+<li><a href="litellm/vertex-ai-language-models.html">vertex_ai-language-models</a> <span class="muted">42</span></li>
+<li><a href="litellm/vertex-ai-llama-models.html">vertex_ai-llama_models</a> <span class="muted">12</span></li>
+<li><a href="litellm/vertex-ai-minimax-models.html">vertex_ai-minimax_models</a> <span class="muted">1</span></li>
+<li><a href="litellm/vertex-ai-mistral-models.html">vertex_ai-mistral_models</a> <span class="muted">19</span></li>
+<li><a href="litellm/vertex-ai-moonshot-models.html">vertex_ai-moonshot_models</a> <span class="muted">1</span></li>
+<li><a href="litellm/vertex-ai-openai-models.html">vertex_ai-openai_models</a> <span class="muted">3</span></li>
+<li><a href="litellm/vertex-ai-qwen-models.html">vertex_ai-qwen_models</a> <span class="muted">4</span></li>
+<li><a href="litellm/vertex-ai-text-models.html">vertex_ai-text-models</a> <span class="muted">2</span></li>
+<li><a href="litellm/vertex-ai-zai-models.html">vertex_ai-zai_models</a> <span class="muted">3</span></li>
+<li><a href="litellm/volcengine.html">volcengine</a> <span class="muted">10</span></li>
+<li><a href="litellm/voyage.html">voyage</a> <span class="muted">31</span></li>
+<li><a href="litellm/wandb.html">wandb</a> <span class="muted">30</span></li>
+<li><a href="litellm/watsonx.html">watsonx</a> <span class="muted">30</span></li>
+<li><a href="litellm/xai.html">xai</a> <span class="muted">43</span></li>
+<li><a href="litellm/xiaomi-mimo.html">xiaomi_mimo</a> <span class="muted">2</span></li>
+<li><a href="litellm/zai.html">zai</a> <span class="muted">16</span></li></ul>
+<h2>models.dev <span class="muted">(8020 rows)</span></h2>
+<ul class="cols"><li><a href="models-dev/302ai.html">302ai</a> <span class="muted">124</span></li>
+<li><a href="models-dev/abacus.html">abacus</a> <span class="muted">108</span></li>
+<li><a href="models-dev/abliteration-ai.html">abliteration-ai</a> <span class="muted">3</span></li>
+<li><a href="models-dev/above.html">above</a> <span class="muted">10</span></li>
+<li><a href="models-dev/agnes.html">agnes</a> <span class="muted">3</span></li>
+<li><a href="models-dev/ai-router.html">ai-router</a> <span class="muted">5</span></li>
+<li><a href="models-dev/ai21.html">ai21</a> <span class="muted">2</span></li>
+<li><a href="models-dev/aiand.html">aiand</a> <span class="muted">13</span></li>
+<li><a href="models-dev/aihubmix.html">aihubmix</a> <span class="muted">139</span></li>
+<li><a href="models-dev/ainetcafe.html">ainetcafe</a> <span class="muted">1</span></li>
+<li><a href="models-dev/aixy.html">aixy</a> <span class="muted">1</span></li>
+<li><a href="models-dev/aki-io.html">aki-io</a> <span class="muted">7</span></li>
+<li><a href="models-dev/alibaba.html">alibaba</a> <span class="muted">59</span></li>
+<li><a href="models-dev/alibaba-cn.html">alibaba-cn</a> <span class="muted">91</span></li>
+<li><a href="models-dev/alibaba-coding-plan.html">alibaba-coding-plan</a> <span class="muted">10</span></li>
+<li><a href="models-dev/alibaba-coding-plan-cn.html">alibaba-coding-plan-cn</a> <span class="muted">10</span></li>
+<li><a href="models-dev/alibaba-token-plan.html">alibaba-token-plan</a> <span class="muted">28</span></li>
+<li><a href="models-dev/alibaba-token-plan-cn.html">alibaba-token-plan-cn</a> <span class="muted">28</span></li>
+<li><a href="models-dev/amazon-bedrock.html">amazon-bedrock</a> <span class="muted">199</span></li>
+<li><a href="models-dev/ambient.html">ambient</a> <span class="muted">14</span></li>
+<li><a href="models-dev/amd.html">amd</a> <span class="muted">6</span></li>
+<li><a href="models-dev/anthropic.html">anthropic</a> <span class="muted">17</span></li>
+<li><a href="models-dev/arcee.html">arcee</a> <span class="muted">7</span></li>
+<li><a href="models-dev/atomic-chat.html">atomic-chat</a> <span class="muted">5</span></li>
+<li><a href="models-dev/auriko.html">auriko</a> <span class="muted">15</span></li>
+<li><a href="models-dev/azure.html">azure</a> <span class="muted">95</span></li>
+<li><a href="models-dev/azure-cognitive-services.html">azure-cognitive-services</a> <span class="muted">87</span></li>
+<li><a href="models-dev/bailing.html">bailing</a> <span class="muted">2</span></li>
+<li><a href="models-dev/baseten.html">baseten</a> <span class="muted">24</span></li>
+<li><a href="models-dev/bee.html">bee</a> <span class="muted">6</span></li>
+<li><a href="models-dev/berget.html">berget</a> <span class="muted">6</span></li>
+<li><a href="models-dev/bothub.html">bothub</a> <span class="muted">8</span></li>
+<li><a href="models-dev/cerebras.html">cerebras</a> <span class="muted">2</span></li>
+<li><a href="models-dev/chutes.html">chutes</a> <span class="muted">14</span></li>
+<li><a href="models-dev/clarifai.html">clarifai</a> <span class="muted">12</span></li>
+<li><a href="models-dev/claudinio.html">claudinio</a> <span class="muted">2</span></li>
+<li><a href="models-dev/cline-pass.html">cline-pass</a> <span class="muted">17</span></li>
+<li><a href="models-dev/cloudferro-sherlock.html">cloudferro-sherlock</a> <span class="muted">5</span></li>
+<li><a href="models-dev/cloudflare-ai-gateway.html">cloudflare-ai-gateway</a> <span class="muted">52</span></li>
+<li><a href="models-dev/cloudflare-workers-ai.html">cloudflare-workers-ai</a> <span class="muted">27</span></li>
+<li><a href="models-dev/cohere.html">cohere</a> <span class="muted">11</span></li>
+<li><a href="models-dev/coralbricks.html">coralbricks</a> <span class="muted">4</span></li>
+<li><a href="models-dev/cortecs.html">cortecs</a> <span class="muted">106</span></li>
+<li><a href="models-dev/crof.html">crof</a> <span class="muted">24</span></li>
+<li><a href="models-dev/crossmodel.html">crossmodel</a> <span class="muted">69</span></li>
+<li><a href="models-dev/crusoe.html">crusoe</a> <span class="muted">11</span></li>
+<li><a href="models-dev/daoxe.html">daoxe</a> <span class="muted">9</span></li>
+<li><a href="models-dev/databricks.html">databricks</a> <span class="muted">30</span></li>
+<li><a href="models-dev/deepinfra.html">deepinfra</a> <span class="muted">72</span></li>
+<li><a href="models-dev/deepseek.html">deepseek</a> <span class="muted">4</span></li>
+<li><a href="models-dev/digitalocean.html">digitalocean</a> <span class="muted">92</span></li>
+<li><a href="models-dev/dinference.html">dinference</a> <span class="muted">6</span></li>
+<li><a href="models-dev/drun.html">drun</a> <span class="muted">3</span></li>
+<li><a href="models-dev/ebcloud.html">ebcloud</a> <span class="muted">4</span></li>
+<li><a href="models-dev/echo.html">echo</a> <span class="muted">1</span></li>
+<li><a href="models-dev/edenai.html">edenai</a> <span class="muted">302</span></li>
+<li><a href="models-dev/empiriolabs.html">empiriolabs</a> <span class="muted">62</span></li>
+<li><a href="models-dev/engy.html">engy</a> <span class="muted">8</span></li>
+<li><a href="models-dev/evroc.html">evroc</a> <span class="muted">16</span></li>
+<li><a href="models-dev/fastrouter.html">fastrouter</a> <span class="muted">37</span></li>
+<li><a href="models-dev/fireworks-ai.html">fireworks-ai</a> <span class="muted">22</span></li>
+<li><a href="models-dev/freemodel.html">freemodel</a> <span class="muted">10</span></li>
+<li><a href="models-dev/friendli.html">friendli</a> <span class="muted">7</span></li>
+<li><a href="models-dev/frogbot.html">frogbot</a> <span class="muted">26</span></li>
+<li><a href="models-dev/github-copilot.html">github-copilot</a> <span class="muted">35</span></li>
+<li><a href="models-dev/gitlab.html">gitlab</a> <span class="muted">30</span></li>
+<li><a href="models-dev/gmicloud.html">gmicloud</a> <span class="muted">17</span></li>
+<li><a href="models-dev/google.html">google</a> <span class="muted">34</span></li>
+<li><a href="models-dev/google-vertex.html">google-vertex</a> <span class="muted">60</span></li>
+<li><a href="models-dev/google-vertex-anthropic.html">google-vertex-anthropic</a> <span class="muted">17</span></li>
+<li><a href="models-dev/greenpt.html">greenpt</a> <span class="muted">40</span></li>
+<li><a href="models-dev/groq.html">groq</a> <span class="muted">10</span></li>
+<li><a href="models-dev/helicone.html">helicone</a> <span class="muted">90</span></li>
+<li><a href="models-dev/hetzner.html">hetzner</a> <span class="muted">2</span></li>
+<li><a href="models-dev/hpc-ai.html">hpc-ai</a> <span class="muted">9</span></li>
+<li><a href="models-dev/huggingface.html">huggingface</a> <span class="muted">81</span></li>
+<li><a href="models-dev/hyper.html">hyper</a> <span class="muted">21</span></li>
+<li><a href="models-dev/iflowcn.html">iflowcn</a> <span class="muted">14</span></li>
+<li><a href="models-dev/impossibl.html">impossibl</a> <span class="muted">76</span></li>
+<li><a href="models-dev/inception.html">inception</a> <span class="muted">3</span></li>
+<li><a href="models-dev/inceptron.html">inceptron</a> <span class="muted">4</span></li>
+<li><a href="models-dev/inco.html">inco</a> <span class="muted">7</span></li>
+<li><a href="models-dev/infer.html">infer</a> <span class="muted">2</span></li>
+<li><a href="models-dev/inference.html">inference</a> <span class="muted">9</span></li>
+<li><a href="models-dev/inferx.html">inferx</a> <span class="muted">12</span></li>
+<li><a href="models-dev/infomaniak.html">infomaniak</a> <span class="muted">10</span></li>
+<li><a href="models-dev/io-net.html">io-net</a> <span class="muted">17</span></li>
+<li><a href="models-dev/iteracompute.html">iteracompute</a> <span class="muted">9</span></li>
+<li><a href="models-dev/jalapeno.html">jalapeno</a> <span class="muted">17</span></li>
+<li><a href="models-dev/jiekou.html">jiekou</a> <span class="muted">61</span></li>
+<li><a href="models-dev/kenari.html">kenari</a> <span class="muted">60</span></li>
+<li><a href="models-dev/kilo.html">kilo</a> <span class="muted">386</span></li>
+<li><a href="models-dev/kimi-code-plan-cn.html">kimi-code-plan-cn</a> <span class="muted">4</span></li>
+<li><a href="models-dev/kimi-code-plan-global.html">kimi-code-plan-global</a> <span class="muted">4</span></li>
+<li><a href="models-dev/klokintegration.html">klokintegration</a> <span class="muted">3</span></li>
+<li><a href="models-dev/kosmik.html">kosmik</a> <span class="muted">1</span></li>
+<li><a href="models-dev/kuae-cloud-coding-plan.html">kuae-cloud-coding-plan</a> <span class="muted">1</span></li>
+<li><a href="models-dev/lilac.html">lilac</a> <span class="muted">4</span></li>
+<li><a href="models-dev/llama.html">llama</a> <span class="muted">7</span></li>
+<li><a href="models-dev/llmgateway.html">llmgateway</a> <span class="muted">214</span></li>
+<li><a href="models-dev/llmgateway-providers.html">llmgateway-providers</a> <span class="muted">446</span></li>
+<li><a href="models-dev/llmtech.html">llmtech</a> <span class="muted">1</span></li>
+<li><a href="models-dev/llmtr.html">llmtr</a> <span class="muted">32</span></li>
+<li><a href="models-dev/lmstudio.html">lmstudio</a> <span class="muted">3</span></li>
+<li><a href="models-dev/longcat.html">longcat</a> <span class="muted">1</span></li>
+<li><a href="models-dev/lowrouter.html">lowrouter</a> <span class="muted">8</span></li>
+<li><a href="models-dev/lucidquery.html">lucidquery</a> <span class="muted">4</span></li>
+<li><a href="models-dev/lynkr.html">lynkr</a> <span class="muted">1</span></li>
+<li><a href="models-dev/meganova.html">meganova</a> <span class="muted">19</span></li>
+<li><a href="models-dev/melious.html">melious</a> <span class="muted">12</span></li>
+<li><a href="models-dev/merge-gateway.html">merge-gateway</a> <span class="muted">198</span></li>
+<li><a href="models-dev/meta.html">meta</a> <span class="muted">5</span></li>
+<li><a href="models-dev/minimax.html">minimax</a> <span class="muted">7</span></li>
+<li><a href="models-dev/minimax-cn.html">minimax-cn</a> <span class="muted">7</span></li>
+<li><a href="models-dev/minimax-cn-coding-plan.html">minimax-cn-coding-plan</a> <span class="muted">8</span></li>
+<li><a href="models-dev/minimax-coding-plan.html">minimax-coding-plan</a> <span class="muted">8</span></li>
+<li><a href="models-dev/mistral.html">mistral</a> <span class="muted">40</span></li>
+<li><a href="models-dev/mixlayer.html">mixlayer</a> <span class="muted">5</span></li>
+<li><a href="models-dev/moark.html">moark</a> <span class="muted">10</span></li>
+<li><a href="models-dev/modal.html">modal</a> <span class="muted">4</span></li>
+<li><a href="models-dev/modelis.html">modelis</a> <span class="muted">9</span></li>
+<li><a href="models-dev/modelscope.html">modelscope</a> <span class="muted">7</span></li>
+<li><a href="models-dev/moonshotai.html">moonshotai</a> <span class="muted">4</span></li>
+<li><a href="models-dev/moonshotai-cn.html">moonshotai-cn</a> <span class="muted">4</span></li>
+<li><a href="models-dev/morph.html">morph</a> <span class="muted">3</span></li>
+<li><a href="models-dev/nan.html">nan</a> <span class="muted">8</span></li>
+<li><a href="models-dev/nano-gpt.html">nano-gpt</a> <span class="muted">609</span></li>
+<li><a href="models-dev/nearai.html">nearai</a> <span class="muted">51</span></li>
+<li><a href="models-dev/nebius.html">nebius</a> <span class="muted">21</span></li>
+<li><a href="models-dev/neon.html">neon</a> <span class="muted">47</span></li>
+<li><a href="models-dev/neosmith.html">neosmith</a> <span class="muted">4</span></li>
+<li><a href="models-dev/neuralwatt.html">neuralwatt</a> <span class="muted">31</span></li>
+<li><a href="models-dev/nova.html">nova</a> <span class="muted">2</span></li>
+<li><a href="models-dev/novita-ai.html">novita-ai</a> <span class="muted">84</span></li>
+<li><a href="models-dev/nvidia.html">nvidia</a> <span class="muted">106</span></li>
+<li><a href="models-dev/oci.html">oci</a> <span class="muted">9</span></li>
+<li><a href="models-dev/ofox.html">ofox</a> <span class="muted">152</span></li>
+<li><a href="models-dev/ollama-cloud.html">ollama-cloud</a> <span class="muted">23</span></li>
+<li><a href="models-dev/openai.html">openai</a> <span class="muted">49</span></li>
+<li><a href="models-dev/opencode.html">opencode</a> <span class="muted">120</span></li>
+<li><a href="models-dev/opencode-go.html">opencode-go</a> <span class="muted">36</span></li>
+<li><a href="models-dev/openreason.html">openreason</a> <span class="muted">3</span></li>
+<li><a href="models-dev/openrouter.html">openrouter</a> <span class="muted">375</span></li>
+<li><a href="models-dev/opper.html">opper</a> <span class="muted">57</span></li>
+<li><a href="models-dev/orcarouter.html">orcarouter</a> <span class="muted">114</span></li>
+<li><a href="models-dev/ovhcloud.html">ovhcloud</a> <span class="muted">13</span></li>
+<li><a href="models-dev/pareto.html">pareto</a> <span class="muted">1</span></li>
+<li><a href="models-dev/pendra.html">pendra</a> <span class="muted">6</span></li>
+<li><a href="models-dev/perplexity.html">perplexity</a> <span class="muted">4</span></li>
+<li><a href="models-dev/perplexity-agent.html">perplexity-agent</a> <span class="muted">22</span></li>
+<li><a href="models-dev/pioneer.html">pioneer</a> <span class="muted">115</span></li>
+<li><a href="models-dev/poe.html">poe</a> <span class="muted">93</span></li>
+<li><a href="models-dev/poolside.html">poolside</a> <span class="muted">3</span></li>
+<li><a href="models-dev/privatemode-ai.html">privatemode-ai</a> <span class="muted">11</span></li>
+<li><a href="models-dev/qihang-ai.html">qihang-ai</a> <span class="muted">9</span></li>
+<li><a href="models-dev/qiniu-ai.html">qiniu-ai</a> <span class="muted">2</span></li>
+<li><a href="models-dev/qvac.html">qvac</a> <span class="muted">9</span></li>
+<li><a href="models-dev/regolo-ai.html">regolo-ai</a> <span class="muted">18</span></li>
+<li><a href="models-dev/requesty.html">requesty</a> <span class="muted">171</span></li>
+<li><a href="models-dev/routing-run.html">routing-run</a> <span class="muted">15</span></li>
+<li><a href="models-dev/runinfra.html">runinfra</a> <span class="muted">7</span></li>
+<li><a href="models-dev/sakana.html">sakana</a> <span class="muted">3</span></li>
+<li><a href="models-dev/salad-cloud.html">salad-cloud</a> <span class="muted">1</span></li>
+<li><a href="models-dev/sap-ai-core.html">sap-ai-core</a> <span class="muted">45</span></li>
+<li><a href="models-dev/scaleway.html">scaleway</a> <span class="muted">16</span></li>
+<li><a href="models-dev/scnet-token-plan.html">scnet-token-plan</a> <span class="muted">19</span></li>
+<li><a href="models-dev/scx-ai.html">scx-ai</a> <span class="muted">4</span></li>
+<li><a href="models-dev/sensenova.html">sensenova</a> <span class="muted">5</span></li>
+<li><a href="models-dev/siliconflow.html">siliconflow</a> <span class="muted">57</span></li>
+<li><a href="models-dev/siliconflow-cn.html">siliconflow-cn</a> <span class="muted">44</span></li>
+<li><a href="models-dev/stackit.html">stackit</a> <span class="muted">8</span></li>
+<li><a href="models-dev/standardcompute.html">standardcompute</a> <span class="muted">1</span></li>
+<li><a href="models-dev/stepfun.html">stepfun</a> <span class="muted">6</span></li>
+<li><a href="models-dev/stepfun-ai.html">stepfun-ai</a> <span class="muted">6</span></li>
+<li><a href="models-dev/subconscious.html">subconscious</a> <span class="muted">2</span></li>
+<li><a href="models-dev/submodel.html">submodel</a> <span class="muted">9</span></li>
+<li><a href="models-dev/synthetic.html">synthetic</a> <span class="muted">11</span></li>
+<li><a href="models-dev/tempr.html">tempr</a> <span class="muted">80</span></li>
+<li><a href="models-dev/tencent-coding-plan.html">tencent-coding-plan</a> <span class="muted">8</span></li>
+<li><a href="models-dev/tencent-token-plan.html">tencent-token-plan</a> <span class="muted">2</span></li>
+<li><a href="models-dev/tencent-tokenhub.html">tencent-tokenhub</a> <span class="muted">3</span></li>
+<li><a href="models-dev/tensorx.html">tensorx</a> <span class="muted">25</span></li>
+<li><a href="models-dev/thinkingmachines.html">thinkingmachines</a> <span class="muted">2</span></li>
+<li><a href="models-dev/tinfoil.html">tinfoil</a> <span class="muted">8</span></li>
+<li><a href="models-dev/togetherai.html">togetherai</a> <span class="muted">29</span></li>
+<li><a href="models-dev/tokengo.html">tokengo</a> <span class="muted">13</span></li>
+<li><a href="models-dev/tokenrouter.html">tokenrouter</a> <span class="muted">1</span></li>
+<li><a href="models-dev/umans-ai.html">umans-ai</a> <span class="muted">7</span></li>
+<li><a href="models-dev/umans-ai-coding-plan.html">umans-ai-coding-plan</a> <span class="muted">8</span></li>
+<li><a href="models-dev/unorouter.html">unorouter</a> <span class="muted">23</span></li>
+<li><a href="models-dev/upstage.html">upstage</a> <span class="muted">4</span></li>
+<li><a href="models-dev/vancine.html">vancine</a> <span class="muted">8</span></li>
+<li><a href="models-dev/venice.html">venice</a> <span class="muted">118</span></li>
+<li><a href="models-dev/vercel.html">vercel</a> <span class="muted">285</span></li>
+<li><a href="models-dev/vispark.html">vispark</a> <span class="muted">3</span></li>
+<li><a href="models-dev/vivgrid.html">vivgrid</a> <span class="muted">37</span></li>
+<li><a href="models-dev/volcengine.html">volcengine</a> <span class="muted">16</span></li>
+<li><a href="models-dev/volcengine-coding-plan.html">volcengine-coding-plan</a> <span class="muted">10</span></li>
+<li><a href="models-dev/vultr.html">vultr</a> <span class="muted">15</span></li>
+<li><a href="models-dev/wafer-ai.html">wafer.ai</a> <span class="muted">5</span></li>
+<li><a href="models-dev/wallaby.html">wallaby</a> <span class="muted">1</span></li>
+<li><a href="models-dev/wandb.html">wandb</a> <span class="muted">20</span></li>
+<li><a href="models-dev/watsonx.html">watsonx</a> <span class="muted">5</span></li>
+<li><a href="models-dev/xai.html">xai</a> <span class="muted">8</span></li>
+<li><a href="models-dev/xiaomi.html">xiaomi</a> <span class="muted">9</span></li>
+<li><a href="models-dev/xiaomi-token-plan-ams.html">xiaomi-token-plan-ams</a> <span class="muted">9</span></li>
+<li><a href="models-dev/xiaomi-token-plan-cn.html">xiaomi-token-plan-cn</a> <span class="muted">9</span></li>
+<li><a href="models-dev/xiaomi-token-plan-sgp.html">xiaomi-token-plan-sgp</a> <span class="muted">9</span></li>
+<li><a href="models-dev/xpersona.html">xpersona</a> <span class="muted">13</span></li>
+<li><a href="models-dev/zai.html">zai</a> <span class="muted">18</span></li>
+<li><a href="models-dev/zai-coding-plan.html">zai-coding-plan</a> <span class="muted">7</span></li>
+<li><a href="models-dev/zeldoc.html">zeldoc</a> <span class="muted">1</span></li>
+<li><a href="models-dev/zenifra.html">zenifra</a> <span class="muted">1</span></li>
+<li><a href="models-dev/zenmux.html">zenmux</a> <span class="muted">125</span></li>
+<li><a href="models-dev/zhipuai.html">zhipuai</a> <span class="muted">17</span></li>
+<li><a href="models-dev/zhipuai-coding-plan.html">zhipuai-coding-plan</a> <span class="muted">4</span></li></ul>
+</main>
+<footer class="muted"><p>This site is produced by an automated pipeline run by one person with AI agents. Nothing is edited by hand. Check the provider&#x27;s own price page before relying on a number.</p><p>Data: CC BY 4.0. Code: MIT. Sources and their licences are listed on the <a href="../#sources">home page</a>. <a href="https://github.com/gmannerHJ/daily-price-trackers">Source code and data</a>.</p></footer>
+</body>
+</html>

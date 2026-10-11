@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily price trackers</title>
+<meta name="description" content="Daily snapshots of public language-model API prices and GPU rental prices, with a dated record of every change.">
+<link rel="canonical" href="https://gmannerhj.github.io/daily-price-trackers/">
+<link rel="alternate" type="application/atom+xml" title="Changes" href="feed.xml">
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1a1a1a;--muted:#5f6368;--line:#d9dce1;--link:#0b57d0;--head:#f3f4f6}
+@media (prefers-color-scheme:dark){:root{--bg:#121416;--fg:#e6e6e6;--muted:#9aa0a6;--line:#33373d;--link:#8ab4f8;--head:#1c1f23}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main,header,footer{max-width:1100px;margin:0 auto;padding:0 16px}
+header{padding-top:16px}
+nav a{margin-right:14px}
+a{color:var(--link)}
+h1{font-size:1.5rem;margin:.8em 0 .3em}
+h2{font-size:1.15rem;margin:1.4em 0 .4em}
+p{margin:.5em 0}
+.muted{color:var(--muted);font-size:.9rem}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:6px;margin:.6em 0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:tabular-nums}
+th,td{padding:6px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:var(--head);position:sticky;top:0}
+td.n,th.n{text-align:right}
+tr:last-child td{border-bottom:0}
+input[type=search]{width:100%;max-width:360px;padding:8px;font:inherit;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg)}
+ul.cols{columns:3 220px;padding-left:1.2em}
+footer{border-top:1px solid var(--line);margin-top:2em;padding-top:1em;padding-bottom:2em}
+</style>
+</head>
+<body>
+<header><nav><a href="./">Home</a> <a href="llm-prices/">Language-model API prices</a> <a href="gpu-rental-prices/">GPU rental prices</a></nav></header>
+<main>
+<h1>Daily price trackers</h1>
+<p>Daily snapshots of public language-model API prices and GPU rental prices, with a dated record of every change.</p>
+<p>A list price can be looked up at any time, but what it was last month cannot be looked up afterwards unless someone wrote it down. These pages write it down once a day.</p>
+<h2><a href="llm-prices/">Language-model API prices</a></h2>
+<p>List prices per million tokens for language models, by provider, recorded once a day.</p>
+<p class="muted">Latest snapshot 2026-10-11 (UTC): 11304 rows (LiteLLM price list 3284, models.dev 8020). History starts 2026-10-11. <a href="llm-prices/changes.html">Changes</a> · <a href="llm-prices/latest.csv">CSV</a> · <a href="llm-prices/latest.json">JSON</a></p>
+<h2><a href="gpu-rental-prices/">GPU rental prices</a></h2>
+<p>Hourly list prices for rented GPU instances, on-demand and interruptible, recorded once a day.</p>
+<p class="muted">Latest snapshot 2026-10-11 (UTC): 1600 rows (Azure Retail Prices API 1496, Verda public instance types 104). History starts 2026-10-11. <a href="gpu-rental-prices/changes.html">Changes</a> · <a href="gpu-rental-prices/latest.csv">CSV</a> · <a href="gpu-rental-prices/latest.json">JSON</a></p>
+<p><a href="feed.xml">Atom feed of changes</a></p>
+<h2 id="sources">Sources and licences</h2>
+<ul><li><a href="https://github.com/BerriAI/litellm" rel="nofollow">LiteLLM price list</a> (language-model api prices)</li>
+<li><a href="https://models.dev/" rel="nofollow">models.dev</a> (language-model api prices)</li>
+<li><a href="https://learn.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices" rel="nofollow">Azure Retail Prices API</a> (gpu rental prices)</li>
+<li><a href="https://verda.com/" rel="nofollow">Verda public instance types</a> (gpu rental prices)</li></ul>
+<p>LiteLLM and models.dev are MIT-licensed projects; their price lists are reused here with attribution. Azure prices come from the Azure Retail Prices API, which Microsoft documents as open to unauthenticated use. Verda prices come from its public instance-types endpoint. The compiled data on this site is published under CC BY 4.0 and the code under the MIT licence. The copyright and permission notices of the two MIT-licensed lists are in <a href="NOTICE.txt">NOTICE.txt</a>.</p>
+<p>Provider and model names are shown as the source lists give them. The lists cover resellers and aggregators as well as first-party providers, and a value that looks implausible is shown as the source lists it.</p>
+</main>
+<footer class="muted"><p>This site is produced by an automated pipeline run by one person with AI agents. Nothing is edited by hand. Check the provider&#x27;s own price page before relying on a number.</p><p>Data: CC BY 4.0. Code: MIT. Sources and their licences are listed on the <a href="./#sources">home page</a>. <a href="https://github.com/gmannerHJ/daily-price-trackers">Source code and data</a>.</p></footer>
+</body>
+</html>

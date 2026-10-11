@@ -1,0 +1,50 @@
+name: Daily snapshot
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # 06:17 UTC every day
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: daily-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Language-model API prices
+        run: python3 trackers/llm_prices.py
+
+      - name: GPU rental prices
+        run: python3 trackers/gpu_rental_prices.py
+
+      - name: Build pages
+        run: python3 build_pages.py
+
+      - name: Commit if the data changed
+        run: |
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Snapshot $(date -u +%Y-%m-%d)"
+          git push
+
+      # Branch-based Pages sites are not always rebuilt for a push made with the workflow token,
+      # so ask for a build explicitly. Harmless when Pages is not enabled yet.
+      - name: Request a Pages build
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds"
