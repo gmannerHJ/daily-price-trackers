@@ -1,1 +1,2 @@
 {"date":"2026-10-11","fetched_at":"2026-10-11T13:48:11Z","previous_date":null,"rows":11304,"changes":0,"sources":{"litellm":{"ok":true,"rows":3284},"models.dev":{"ok":true,"rows":8020}}}
+{"date":"2026-10-12","fetched_at":"2026-10-12T15:39:21Z","previous_date":"2026-10-11","rows":11305,"changes":144,"sources":{"litellm":{"ok":true,"rows":3284},"models.dev":{"ok":true,"rows":8021}}}
