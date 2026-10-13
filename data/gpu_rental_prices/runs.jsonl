@@ -1,2 +1,3 @@
 {"date":"2026-10-11","fetched_at":"2026-10-11T13:48:32Z","previous_date":null,"rows":1600,"changes":0,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}
 {"date":"2026-10-12","fetched_at":"2026-10-12T15:39:58Z","previous_date":"2026-10-11","rows":1600,"changes":104,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}
+{"date":"2026-10-13","fetched_at":"2026-10-13T14:20:52Z","previous_date":"2026-10-12","rows":1600,"changes":104,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}
