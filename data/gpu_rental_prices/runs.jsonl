@@ -2,3 +2,4 @@
 {"date":"2026-10-12","fetched_at":"2026-10-12T15:39:58Z","previous_date":"2026-10-11","rows":1600,"changes":104,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}
 {"date":"2026-10-13","fetched_at":"2026-10-13T14:20:52Z","previous_date":"2026-10-12","rows":1600,"changes":104,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}
 {"date":"2026-10-14","fetched_at":"2026-10-14T12:03:08Z","previous_date":"2026-10-13","rows":1600,"changes":104,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}
+{"date":"2026-10-15","fetched_at":"2026-10-15T11:40:07Z","previous_date":"2026-10-14","rows":1600,"changes":104,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}
