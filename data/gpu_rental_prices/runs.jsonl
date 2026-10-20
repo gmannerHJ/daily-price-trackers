@@ -7,3 +7,4 @@
 {"date":"2026-10-17","fetched_at":"2026-10-17T10:53:15Z","previous_date":"2026-10-16","rows":1600,"changes":104,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}
 {"date":"2026-10-18","fetched_at":"2026-10-18T11:18:49Z","previous_date":"2026-10-17","rows":1600,"changes":104,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}
 {"date":"2026-10-19","fetched_at":"2026-10-19T13:31:45Z","previous_date":"2026-10-18","rows":1600,"changes":104,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}
+{"date":"2026-10-20","fetched_at":"2026-10-20T11:48:15Z","previous_date":"2026-10-19","rows":1600,"changes":104,"sources":{"azure":{"ok":true,"rows":1496},"verda":{"ok":true,"rows":104}}}

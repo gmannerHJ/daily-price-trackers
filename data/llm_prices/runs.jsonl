@@ -7,3 +7,4 @@
 {"date":"2026-10-17","fetched_at":"2026-10-17T10:52:53Z","previous_date":"2026-10-16","rows":11947,"changes":282,"sources":{"litellm":{"ok":true,"rows":3409},"models.dev":{"ok":true,"rows":8538}}}
 {"date":"2026-10-18","fetched_at":"2026-10-18T11:18:27Z","previous_date":"2026-10-17","rows":12020,"changes":220,"sources":{"litellm":{"ok":true,"rows":3427},"models.dev":{"ok":true,"rows":8593}}}
 {"date":"2026-10-19","fetched_at":"2026-10-19T13:31:22Z","previous_date":"2026-10-18","rows":12031,"changes":107,"sources":{"litellm":{"ok":true,"rows":3428},"models.dev":{"ok":true,"rows":8603}}}
+{"date":"2026-10-20","fetched_at":"2026-10-20T11:47:53Z","previous_date":"2026-10-19","rows":12050,"changes":267,"sources":{"litellm":{"ok":true,"rows":3429},"models.dev":{"ok":true,"rows":8621}}}
