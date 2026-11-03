@@ -5,8 +5,15 @@
 <link rel="self" href="https://gmannerhj.github.io/daily-price-trackers/feed.xml"/>
 <link href="https://gmannerhj.github.io/daily-price-trackers/"/>
 <id>https://gmannerhj.github.io/daily-price-trackers/</id>
-<updated>2026-11-02T16:11:39Z</updated>
+<updated>2026-11-03T14:26:47Z</updated>
 <author><name>Daily price trackers</name></author>
+<entry>
+<title>Language-model API prices: price changes: 96, new: 13, removed: 8 (2026-11-03)</title>
+<link href="https://gmannerhj.github.io/daily-price-trackers/llm-prices/changes.html#d2026-11-03"/>
+<id>https://gmannerhj.github.io/daily-price-trackers/llm-prices/changes.html#d2026-11-03</id>
+<updated>2026-11-03T14:26:47Z</updated>
+<summary>Language-model API prices: price changes: 96, new: 13, removed: 8 (2026-11-03)</summary>
+</entry>
 <entry>
 <title>GPU rental prices: price changes: 114, new: 0, removed: 0 (2026-11-02)</title>
 <link href="https://gmannerhj.github.io/daily-price-trackers/gpu-rental-prices/changes.html#d2026-11-02"/>
