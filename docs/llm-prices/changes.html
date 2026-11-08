@@ -35,7 +35,86 @@ footer{border-top:1px solid var(--line);margin-top:2em;padding-top:1em;padding-b
 <header><nav><a href="../">Home</a> <a href="../llm-prices/">Language-model API prices</a> <a href="../gpu-rental-prices/">GPU rental prices</a></nav></header>
 <main>
 <h1>Language-model API prices: changes</h1>
-<p class="muted">28 daily snapshots from 2026-10-11 to 2026-11-07. Each day is compared with the previous snapshot. <a href="changes.csv">CSV</a> · <a href="changes.json">JSON</a></p>
+<p class="muted">29 daily snapshots from 2026-10-11 to 2026-11-08. Each day is compared with the previous snapshot. <a href="changes.csv">CSV</a> · <a href="changes.json">JSON</a></p>
+<h2 id="d2026-11-08">2026-11-08 <span class="muted">price changes: 57, new: 9, removed: 10</span></h2>
+<div class="scroll"><table><thead><tr><th>Type</th><th>source</th><th>provider</th><th>model_id</th><th>Field</th><th class="n">Old</th><th class="n">New</th></tr></thead><tbody>
+<tr><td>new</td><td>litellm</td><td>moonshot</td><td>moonshot/kimi-k3.1-pro-highspeed</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>new</td><td>litellm</td><td>together_ai</td><td>together_ai/essentialai/rnj-1-instruct</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>price_change</td><td>litellm</td><td>together_ai</td><td>together_ai/Qwen/Qwen3.7-Max</td><td>prompt_usd_per_mtok</td><td class="n">1.5</td><td class="n">2.5</td></tr>
+<tr><td>price_change</td><td>litellm</td><td>together_ai</td><td>together_ai/Qwen/Qwen3.7-Max</td><td>completion_usd_per_mtok</td><td class="n">4.5</td><td class="n">7.5</td></tr>
+<tr><td>new</td><td>models.dev</td><td>fireworks-ai</td><td>accounts/fireworks/models/kimi-k3p1-pro</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>new</td><td>models.dev</td><td>fireworks-ai</td><td>accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>new</td><td>models.dev</td><td>morph</td><td>morph-kimik31</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>new</td><td>models.dev</td><td>novita-ai</td><td>tencent/hy4</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>new</td><td>models.dev</td><td>novita-ai</td><td>zai-org/glm-5.3-flashX</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>new</td><td>models.dev</td><td>ollama-cloud</td><td>kimi-k3.1-pro</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>new</td><td>models.dev</td><td>tinfoil</td><td>kimi-k3-1-pro</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>removed</td><td>models.dev</td><td>fireworks-ai</td><td>accounts/fireworks/models/gpt-oss-120b</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>removed</td><td>models.dev</td><td>fireworks-ai</td><td>accounts/fireworks/models/inkling</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>removed</td><td>models.dev</td><td>fireworks-ai</td><td>accounts/fireworks/models/nemotron-3-ultra-nvfp4</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>removed</td><td>models.dev</td><td>fireworks-ai</td><td>accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>removed</td><td>models.dev</td><td>kilo</td><td>inception/mercury-2</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>removed</td><td>models.dev</td><td>kilo</td><td>inception/mercury-2.5</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>removed</td><td>models.dev</td><td>kilo</td><td>inception/mercury-3</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>removed</td><td>models.dev</td><td>openrouter</td><td>inception/mercury-2</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>removed</td><td>models.dev</td><td>openrouter</td><td>inception/mercury-2.5</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>removed</td><td>models.dev</td><td>openrouter</td><td>inception/mercury-3</td><td></td><td class="n"></td><td class="n"></td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>inceptron</td><td>moonshotai/Kimi-K2.6</td><td>prompt_usd_per_mtok</td><td class="n">0.799</td><td class="n">0.7985</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>kilo</td><td>google/gemma-4-26b-a4b-it</td><td>prompt_usd_per_mtok</td><td class="n">0.04</td><td class="n">0.031</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>kilo</td><td>google/gemma-4-26b-a4b-it</td><td>completion_usd_per_mtok</td><td class="n">0.15</td><td class="n">0.094</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>kilo</td><td>openai/gpt-oss-120b</td><td>prompt_usd_per_mtok</td><td class="n">0.018</td><td class="n">0.02</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>kilo</td><td>openai/gpt-oss-120b</td><td>completion_usd_per_mtok</td><td class="n">0.067</td><td class="n">0.076</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>kilo</td><td>openai/gpt-oss-20b</td><td>completion_usd_per_mtok</td><td class="n">0.017</td><td class="n">0.018</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>kilo</td><td>~deepseek/deepseek-v4-flash-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.0487</td><td class="n">0.0434</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>kilo</td><td>~moonshotai/kimi-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.1824</td><td class="n">0.151</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>kilo</td><td>~z-ai/glm-flash-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.0285</td><td class="n">0.0335</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>kilo</td><td>~z-ai/glm-flash-latest</td><td>completion_usd_per_mtok</td><td class="n">0.0923</td><td class="n">0.083</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4-flash-0731</td><td>prompt_usd_per_mtok</td><td class="n">0.04972</td><td class="n">0.04444</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4-flash-0731</td><td>completion_usd_per_mtok</td><td class="n">0.14916</td><td class="n">0.13332</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4-flash-0731:thinking</td><td>prompt_usd_per_mtok</td><td class="n">0.04972</td><td class="n">0.04444</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4-flash-0731:thinking</td><td>completion_usd_per_mtok</td><td class="n">0.14916</td><td class="n">0.13332</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>meituan/longcat-2.5-preview</td><td>prompt_usd_per_mtok</td><td class="n">0.75</td><td class="n">0.7875</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>meituan/longcat-2.5-preview</td><td>completion_usd_per_mtok</td><td class="n">2.95</td><td class="n">3.0975</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>ornith-ai/ornith-1.5-122b</td><td>prompt_usd_per_mtok</td><td class="n">0.2</td><td class="n">0.26</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>ornith-ai/ornith-1.5-122b</td><td>completion_usd_per_mtok</td><td class="n">0.8</td><td class="n">2.08</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>upstage/solar-pro4</td><td>prompt_usd_per_mtok</td><td class="n">0.03</td><td class="n">0.15</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>upstage/solar-pro4</td><td>completion_usd_per_mtok</td><td class="n">0.12</td><td class="n">0.6</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>upstage/solar-pro4:thinking</td><td>prompt_usd_per_mtok</td><td class="n">0.03</td><td class="n">0.15</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>upstage/solar-pro4:thinking</td><td>completion_usd_per_mtok</td><td class="n">0.12</td><td class="n">0.6</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>xiaomi/mimo-v2.5</td><td>prompt_usd_per_mtok</td><td class="n">0.413</td><td class="n">0.14</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>xiaomi/mimo-v2.5</td><td>completion_usd_per_mtok</td><td class="n">2.086</td><td class="n">0.28</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>xiaomi/mimo-v2.5:thinking</td><td>prompt_usd_per_mtok</td><td class="n">0.413</td><td class="n">0.14</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>xiaomi/mimo-v2.5:thinking</td><td>completion_usd_per_mtok</td><td class="n">2.086</td><td class="n">0.28</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>z-ai/glm-5.2</td><td>prompt_usd_per_mtok</td><td class="n">0.42</td><td class="n">0.189</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>z-ai/glm-5.2</td><td>completion_usd_per_mtok</td><td class="n">1.32</td><td class="n">0.594</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>z-ai/glm-5.2:thinking</td><td>prompt_usd_per_mtok</td><td class="n">0.42</td><td class="n">0.189</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>z-ai/glm-5.2:thinking</td><td>completion_usd_per_mtok</td><td class="n">1.32</td><td class="n">0.594</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>deepseek/deepseek-v4-flash-0731</td><td>prompt_usd_per_mtok</td><td class="n">0.0487</td><td class="n">0.0434</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>deepseek/deepseek-v4-pro</td><td>prompt_usd_per_mtok</td><td class="n">0.72819</td><td class="n">0.241338</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>deepseek/deepseek-v4-pro</td><td>completion_usd_per_mtok</td><td class="n">1.45638</td><td class="n">0.482676</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>deepseek/deepseek-v4-pro-0813</td><td>prompt_usd_per_mtok</td><td class="n">0.1165</td><td class="n">0.111</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>deepseek/deepseek-v4-pro-0813</td><td>completion_usd_per_mtok</td><td class="n">4.66</td><td class="n">4.44</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>deepseek/deepseek-v4.1-flash</td><td>completion_usd_per_mtok</td><td class="n">0.567</td><td class="n">0.41</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>deepseek/deepseek-v4.1-flash-1017</td><td>prompt_usd_per_mtok</td><td class="n">0.15</td><td class="n">0.006</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>deepseek/deepseek-v4.1-flash-1017</td><td>completion_usd_per_mtok</td><td class="n">0.6</td><td class="n">0.5</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>meta-llama/llama-3.2-3b-instruct</td><td>prompt_usd_per_mtok</td><td class="n">0.0509</td><td class="n">0.05</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>meta-llama/llama-3.2-3b-instruct</td><td>completion_usd_per_mtok</td><td class="n">0.335</td><td class="n">0.33</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>moonshotai/kimi-k2.5</td><td>prompt_usd_per_mtok</td><td class="n">0.5</td><td class="n">0.532</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>moonshotai/kimi-k2.5</td><td>completion_usd_per_mtok</td><td class="n">2.5</td><td class="n">3.325</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>openai/gpt-oss-120b</td><td>prompt_usd_per_mtok</td><td class="n">0.016</td><td class="n">0.025</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>openai/gpt-oss-120b</td><td>completion_usd_per_mtok</td><td class="n">0.059</td><td class="n">0.094</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>qwen/qwen3.6-27b</td><td>prompt_usd_per_mtok</td><td class="n">0.45</td><td class="n">0.32</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>qwen/qwen3.6-27b</td><td>completion_usd_per_mtok</td><td class="n">2.7</td><td class="n">3.2</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>z-ai/glm-5.3-flash</td><td>prompt_usd_per_mtok</td><td class="n">0.15</td><td class="n">0.0335</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>z-ai/glm-5.3-flash</td><td>completion_usd_per_mtok</td><td class="n">0.5</td><td class="n">0.083</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>~deepseek/deepseek-v4-flash-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.0487</td><td class="n">0.0434</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>~moonshotai/kimi-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.1824</td><td class="n">0.1605</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>~z-ai/glm-flash-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.0285</td><td class="n">0.0335</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>~z-ai/glm-flash-latest</td><td>completion_usd_per_mtok</td><td class="n">0.0923</td><td class="n">0.083</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>prime</td><td>deepseek/deepseek-v4.1-flash</td><td>prompt_usd_per_mtok</td><td class="n">0.156</td><td class="n">0.078</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>prime</td><td>deepseek/deepseek-v4.1-flash-1017</td><td>prompt_usd_per_mtok</td><td class="n">0.1092</td><td class="n">0.08736</td></tr>
+<tr><td>price_change</td><td>models.dev</td><td>prime</td><td>z-ai/glm-5.3-flash</td><td>prompt_usd_per_mtok</td><td class="n">0.15</td><td class="n">0.105</td></tr>
+</tbody></table></div>
 <h2 id="d2026-11-07">2026-11-07 <span class="muted">price changes: 95, new: 28, removed: 11</span></h2>
 <div class="scroll"><table><thead><tr><th>Type</th><th>source</th><th>provider</th><th>model_id</th><th>Field</th><th class="n">Old</th><th class="n">New</th></tr></thead><tbody>
 <tr><td>new</td><td>litellm</td><td>azure</td><td>azure/us/gpt-realtime-1.5</td><td></td><td class="n"></td><td class="n"></td></tr>
@@ -1992,87 +2071,9 @@ footer{border-top:1px solid var(--line);margin-top:2em;padding-top:1em;padding-b
 <tr><td>price_change</td><td>models.dev</td><td>llmgateway-providers</td><td>reka-ai/deepseek-v4.1-flash</td><td>completion_usd_per_mtok</td><td class="n">0.3</td><td class="n">0.6</td></tr>
 <tr><td>price_change</td><td>models.dev</td><td>llmgateway-providers</td><td>reka-ai/deepseek-v4.1-flash-1017</td><td>prompt_usd_per_mtok</td><td class="n">0.15</td><td class="n">0.16</td></tr>
 <tr><td>price_change</td><td>models.dev</td><td>llmgateway-providers</td><td>reka-ai/deepseek-v4.1-flash-1017</td><td>completion_usd_per_mtok</td><td class="n">0.6</td><td class="n">0.64</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4-flash-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.034</td><td class="n">0.1</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4.1-flash-1017</td><td>prompt_usd_per_mtok</td><td class="n">0.034</td><td class="n">0.1</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4.1-flash-1017:thinking</td><td>prompt_usd_per_mtok</td><td class="n">0.034</td><td class="n">0.1</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>google/gemma-4-26b-a4b-it</td><td>prompt_usd_per_mtok</td><td class="n">0.09</td><td class="n">0.07</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>google/gemma-4-26b-a4b-it</td><td>completion_usd_per_mtok</td><td class="n">0.3</td><td class="n">0.24</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>google/gemma-4-26b-a4b-it:thinking</td><td>prompt_usd_per_mtok</td><td class="n">0.09</td><td class="n">0.07</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>google/gemma-4-26b-a4b-it:thinking</td><td>completion_usd_per_mtok</td><td class="n">0.3</td><td class="n">0.24</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>z-ai/glm-5.2</td><td>prompt_usd_per_mtok</td><td class="n">0.42</td><td class="n">0.226</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>z-ai/glm-5.2</td><td>completion_usd_per_mtok</td><td class="n">1.32</td><td class="n">2.208</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>z-ai/glm-5.2:thinking</td><td>prompt_usd_per_mtok</td><td class="n">0.42</td><td class="n">0.226</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>nano-gpt</td><td>z-ai/glm-5.2:thinking</td><td>completion_usd_per_mtok</td><td class="n">1.32</td><td class="n">2.208</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>ofox</td><td>deepseek/deepseek-v4-pro-0423</td><td>prompt_usd_per_mtok</td><td class="n">1.32</td><td class="n">1.74</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>ofox</td><td>deepseek/deepseek-v4-pro-0423</td><td>completion_usd_per_mtok</td><td class="n">3.96</td><td class="n">3.48</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>deepseek/deepseek-v4-flash</td><td>prompt_usd_per_mtok</td><td class="n">0.05</td><td class="n">0.091</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>deepseek/deepseek-v4-flash</td><td>completion_usd_per_mtok</td><td class="n">0.45</td><td class="n">0.182</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>meta-llama/llama-3.1-8b-instruct</td><td>prompt_usd_per_mtok</td><td class="n">0.05</td><td class="n">0.02</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>meta-llama/llama-3.1-8b-instruct</td><td>completion_usd_per_mtok</td><td class="n">0.08</td><td class="n">0.04</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>moonshotai/kimi-k3</td><td>prompt_usd_per_mtok</td><td class="n">0.15</td><td class="n">0.179</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>qwen/qwen3.6-27b</td><td>prompt_usd_per_mtok</td><td class="n">0.32</td><td class="n">0.45</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>qwen/qwen3.6-27b</td><td>completion_usd_per_mtok</td><td class="n">3.2</td><td class="n">2.7</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>qwen/qwen3.6-35b-a3b</td><td>completion_usd_per_mtok</td><td class="n">0.95</td><td class="n">0.9</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>qwen/qwen3.8-27b</td><td>prompt_usd_per_mtok</td><td class="n">0.2</td><td class="n">0.039</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>qwen/qwen3.8-27b</td><td>completion_usd_per_mtok</td><td class="n">2.5</td><td class="n">1.25</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>z-ai/glm-5.1</td><td>prompt_usd_per_mtok</td><td class="n">0.966</td><td class="n">1.4</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>z-ai/glm-5.1</td><td>completion_usd_per_mtok</td><td class="n">3.036</td><td class="n">4.4</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>z-ai/glm-5.2</td><td>prompt_usd_per_mtok</td><td class="n">0.0341</td><td class="n">0.014</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>~deepseek/deepseek-flash-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.02</td><td class="n">0.0126</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>~deepseek/deepseek-flash-latest</td><td>completion_usd_per_mtok</td><td class="n">1</td><td class="n">1.8</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>~deepseek/deepseek-pro-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.2428</td><td class="n">0.2542</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>~moonshotai/kimi-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.15</td><td class="n">0.179</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>~z-ai/glm-flash-latest</td><td>prompt_usd_per_mtok</td><td class="n">0.0258</td><td class="n">0.0216</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>openrouter</td><td>~z-ai/glm-flash-latest</td><td>completion_usd_per_mtok</td><td class="n">0.0923</td><td class="n">0.1324</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>venice</td><td>nvidia-nemotron-3-5-super-vl-120b-a12b</td><td>prompt_usd_per_mtok</td><td class="n">0.25</td><td class="n">0.2</td></tr>
-<tr><td>price_change</td><td>models.dev</td><td>venice</td><td>nvidia-nemotron-3-5-super-vl-120b-a12b</td><td>completion_usd_per_mtok</td><td class="n">1.25</td><td class="n">0.5</td></tr>
 </tbody></table></div>
+<p class="muted">34 more rows for this date are in the CSV and JSON files.</p>
 <h2 id="d2026-10-27">2026-10-27 <span class="muted">price changes: 112, new: 52, removed: 31</span></h2>
-<div class="scroll"><table><thead><tr><th>Type</th><th>source</th><th>provider</th><th>model_id</th><th>Field</th><th class="n">Old</th><th class="n">New</th></tr></thead><tbody>
-<tr><td>new</td><td>litellm</td><td>abliteration</td><td>abliteration/abliterated-model</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>abliteration</td><td>abliteration/abliterated-model-large</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>abliteration</td><td>abliteration/abliterated-model-large-flash</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>abliteration</td><td>abliteration/abliterated-model-large-v2</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>baseten</td><td>baseten/decision-models/baseten-elephant-9b-latest</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>baseten</td><td>baseten/decision-models/baseten-mammoth-27b-latest</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>bedrock_converse</td><td>global.openai.gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>bedrock_converse</td><td>us.openai.gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>github_copilot</td><td>github_copilot/gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>openai</td><td>gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>refuseless</td><td>refuseless/deepseek-v4.1-flash-abliterated</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>refuseless</td><td>refuseless/deepseek-v4.1-flash-fast</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>refuseless</td><td>refuseless/glm-5.3-abliterated</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>refuseless</td><td>refuseless/glm-5.3-flash-abliterated</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>litellm</td><td>refuseless</td><td>refuseless/minimax-m3.1-flash</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>aimlapi</td><td>openai/gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>azure</td><td>gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>azure-cognitive-services</td><td>gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>commandcode</td><td>gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>edenai</td><td>openai/gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>edenai</td><td>tencent/deepseek-v4.1-flash-1017</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>github-copilot</td><td>gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>huggingface</td><td>MiniMaxAI/MiniMax-M3.1-Flash</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>kilo</td><td>openai/gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>kilo</td><td>openai/gpt-6.1-terra-pro</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>llmgateway</td><td>gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>llmgateway</td><td>qwen3.8-omni-flash</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>llmgateway-providers</td><td>alibaba/qwen3.8-omni-flash</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>llmgateway-providers</td><td>openai/gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>llmgateway-providers</td><td>sciforium/deepseek-v4.1-flash-1017</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>lowrouter</td><td>auto/openai/gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>merge-gateway</td><td>openai/gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>nano-gpt</td><td>aisingapore/gemma-sea-lion-v4-27b-it</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>nano-gpt</td><td>aisingapore/qwen-sea-lion-v4-32b-it</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4.1-flash-0910-uncensored</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4.1-flash-0910-uncensored:thinking</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4.1-flash-1017-uncensored</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>nano-gpt</td><td>deepseek/deepseek-v4.1-flash-1017-uncensored:thinking</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>nano-gpt</td><td>meituan/longcat-2.5-preview</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>nano-gpt</td><td>openai/gpt-6.1-terra</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>nano-gpt</td><td>openai/gpt-6.1-terra-pro</td><td></td><td class="n"></td><td class="n"></td></tr>
-<tr><td>new</td><td>models.dev</td><td>nano-gpt</td><td>speakleash/bielik-11b-v3.0-instruct</td><td></td><td class="n"></td><td class="n"></td></tr>
-</tbody></table></div>
-<p class="muted">153 more rows for this date are in the CSV and JSON files.</p>
 <h2 id="d2026-10-26">2026-10-26 <span class="muted">price changes: 78, new: 15, removed: 8</span></h2>
 <h2 id="d2026-10-25">2026-10-25 <span class="muted">price changes: 33, new: 93, removed: 12</span></h2>
 <h2 id="d2026-10-24">2026-10-24 <span class="muted">price changes: 116, new: 49, removed: 3</span></h2>
