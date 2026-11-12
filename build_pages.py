@@ -80,6 +80,7 @@ TRACKERS = [
         "sources": {
             "azure": ("Azure Retail Prices API", "https://learn.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices"),
             "verda": ("Verda public instance types", "https://verda.com/"),
+            "runcrate": ("Runcrate public GPU pricing feed", "https://www.runcrate.ai/"),
         },
     },
 ]
@@ -453,7 +454,7 @@ def main():
         "<h2 id=\"sources\">Sources and licences</h2>\n<ul>%s</ul>\n"
         "<p>LiteLLM and models.dev are MIT-licensed projects; their price lists are reused here with attribution. "
         "Azure prices come from the Azure Retail Prices API, which Microsoft documents as open to unauthenticated use. "
-        "Verda prices come from its public instance-types endpoint. The compiled data on this site is published under "
+        "Verda and Runcrate prices come from their public endpoints. The compiled data on this site is published under "
         "CC BY 4.0 and the code under the MIT licence. The copyright and permission notices of the two MIT-licensed "
         "lists are in <a href=\"NOTICE.txt\">NOTICE.txt</a>.</p>\n"
         "<p>Provider and model names are shown as the source lists give them. The lists cover resellers and "

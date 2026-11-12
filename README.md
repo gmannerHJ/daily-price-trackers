@@ -52,7 +52,7 @@ Sources:
 
 | Field | Meaning |
 | --- | --- |
-| `source` | `azure` or `verda` |
+| `source` | `azure`, `verda` or `runcrate` |
 | `provider` | provider name |
 | `instance_type` | the provider's instance or size name |
 | `gpu_model` | GPU name. Azure: taken from the size name when it carries one (for example `A100`), otherwise empty |
@@ -71,6 +71,11 @@ Sources:
   One request per region per day.
 - Verda (formerly DataCrunch): `https://api.verda.com/v1/instance-types`, which answers
   without an account. One request per day. Prices are not broken down by region.
+- Runcrate: `https://www.runcrate.ai/api/gpu-pricing`, a public JSON feed that answers
+  without an account. One request per day. One row per GPU type, priced per single GPU
+  (`gpu_count` is 1, `instance_type` is the feed's GPU type id), on demand only. Types
+  with no live offers are left out, and so are types the feed does not identify fully
+  (it does not say SXM or PCIe, so H100 is not read). Prices are not broken down by region.
 
 GPU marketplaces and providers whose terms prohibit automated reading or the
 building of price datasets, or whose price endpoint needs an account, are not read.

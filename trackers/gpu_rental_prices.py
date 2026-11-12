@@ -5,6 +5,7 @@ Sources:
   azure  Azure Retail Prices API (documented by Microsoft as unauthenticated)
          GPU virtual machine sizes (NC, ND, NV, NG families), Linux, in REGIONS
   verda  Verda (formerly DataCrunch) public instance-types endpoint
+  runcrate  Runcrate public GPU pricing feed (on-demand price per GPU-hour)
 
 Writes data/gpu_rental_prices/YYYY-MM-DD.jsonl and updates changes.jsonl.
 """
@@ -34,6 +35,30 @@ AZURE_REGIONS = (
 )
 AZURE_FAMILIES = ("NC", "ND", "NV", "NG")
 VERDA_URL = "https://api.verda.com/v1/instance-types"
+RUNCRATE_URL = "https://www.runcrate.ai/api/gpu-pricing"
+# Feed GPU type -> GPU name. Only types the feed identifies without guessing:
+# it does not say SXM or PCIe, so H100 is left out, and V100 comes in two
+# memory sizes under one name, so it is left out too. The A100 80GB and 40GB
+# rows are separate feed types and keep their own `vram_gb`.
+RUNCRATE_GPU_MODELS = {
+    "B300": "B300",
+    "B200": "B200",
+    "H200": "H200",
+    "H200_nvl": "H200 NVL",
+    "A100_80G": "A100",
+    "A100": "A100",
+    "L40S": "L40S",
+    "L40": "L40",
+    "RTX5090": "RTX 5090",
+    "RTX4090": "RTX 4090",
+    "RTX3090": "RTX 3090",
+    "RTX6000Ada": "RTX 6000 Ada",
+    "RTXPro6000": "RTX PRO 6000",
+    "A6000": "RTX A6000",
+    "A40": "A40",
+    "L4": "L4",
+    "A10": "A10",
+}
 
 KEY_FIELDS = ("source", "instance_type", "pricing", "region")
 PRICE_FIELDS = ("price_usd_per_hour",)
@@ -141,10 +166,39 @@ def fetch_verda():
     return rows
 
 
+def fetch_runcrate():
+    data = common.http_get_json(RUNCRATE_URL)
+    rows = []
+    for item in data.get("gpus") or []:
+        model = RUNCRATE_GPU_MODELS.get(item.get("gpu_type"))
+        if model is None:
+            continue
+        if (common.num(item.get("available_options")) or 0) < 1:
+            continue  # the feed keeps a stale price for a type with no live offers
+        price = common.num(item.get("min_price_hr"))
+        if price is None or price <= 0:
+            continue
+        size = re.match(r"\s*(\d+)\s*GB", str(item.get("vram") or ""), re.I)
+        rows.append(
+            {
+                "source": "runcrate",
+                "provider": "Runcrate",
+                "instance_type": item["gpu_type"],
+                "gpu_model": model,
+                "gpu_count": 1,
+                "vram_gb": int(size.group(1)) if size else None,
+                "price_usd_per_hour": round(price, 6),
+                "pricing": "on_demand",
+                "region": None,
+            }
+        )
+    return rows
+
+
 def main():
     common.run_tracker(
         "gpu_rental_prices",
-        {"azure": fetch_azure, "verda": fetch_verda},
+        {"azure": fetch_azure, "verda": fetch_verda, "runcrate": fetch_runcrate},
         KEY_FIELDS,
         PRICE_FIELDS,
         sort_key=lambda r: (r["source"], r["instance_type"] or "", r["pricing"], r["region"] or ""),
