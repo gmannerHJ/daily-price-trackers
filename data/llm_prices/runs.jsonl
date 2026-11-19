@@ -37,3 +37,4 @@
 {"date":"2026-11-16","fetched_at":"2026-11-16T15:59:15Z","previous_date":"2026-11-15","rows":13519,"changes":130,"sources":{"litellm":{"ok":true,"rows":4073},"models.dev":{"ok":true,"rows":9446}}}
 {"date":"2026-11-17","fetched_at":"2026-11-17T16:11:04Z","previous_date":"2026-11-16","rows":13611,"changes":409,"sources":{"litellm":{"ok":true,"rows":4126},"models.dev":{"ok":true,"rows":9485}}}
 {"date":"2026-11-18","fetched_at":"2026-11-18T15:46:54Z","previous_date":"2026-11-17","rows":14432,"changes":1200,"sources":{"litellm":{"ok":true,"rows":4902},"models.dev":{"ok":true,"rows":9530}}}
+{"date":"2026-11-19","fetched_at":"2026-11-19T15:52:31Z","previous_date":"2026-11-18","rows":14496,"changes":437,"sources":{"litellm":{"ok":true,"rows":4937},"models.dev":{"ok":true,"rows":9559}}}
